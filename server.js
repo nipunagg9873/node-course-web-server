@@ -52,6 +52,11 @@ app.get('/bad',(req,res)=>{
     errorMessage:'kuchh gochi kia'
   });
 });
+app.get('/portfolio',(req,res)=>{
+  res.render('portfolio.hbs',{
+    title:'porfolio'
+  });
+});
 app.listen(port,()=>{
   console.log(`server is up on port ${port}`);
 });
