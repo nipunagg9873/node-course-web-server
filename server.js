@@ -52,9 +52,9 @@ app.get('/bad',(req,res)=>{
     errorMessage:'kuchh gochi kia'
   });
 });
-app.get('/portfolio',(req,res)=>{
-  res.render('portfolio.hbs',{
-    title:'porfolio'
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    title:'projects'
   });
 });
 app.listen(port,()=>{
